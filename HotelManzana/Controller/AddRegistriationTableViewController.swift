@@ -21,6 +21,12 @@ class AddRegistriationTableViewController: UITableViewController {
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
     
+    @IBOutlet var numberOfAdultsLabel: UILabel!
+    @IBOutlet var numberOfChildrenLabel: UILabel!
+    @IBOutlet var numberOfAdultsStepper: UIStepper!
+    @IBOutlet var numberOfChildrenStepper: UIStepper!
+    
+    
     var isCheckInDatePickerShown: Bool = false {
         didSet {
             checkInDatePicker.isHidden = !isCheckInDatePickerShown
@@ -40,6 +46,7 @@ class AddRegistriationTableViewController: UITableViewController {
         checkInDatePicker.date = midnightToday
         
         updateDateViews()
+        updateNumberOfGuests()
 
     }
     
@@ -49,6 +56,8 @@ class AddRegistriationTableViewController: UITableViewController {
         let email = emailTextField.text ?? ""
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
         
         print("DONE Tapped")
         print("firstName: \(firstName)")
@@ -56,11 +65,18 @@ class AddRegistriationTableViewController: UITableViewController {
         print("email: \(email)")
         print("checkIn: \(checkInDate)")
         print("checkOut: \(checkOutDate)")
+        print("numberOfAdults: \(numberOfAdults)")
+        print("numberOfChildren: \(numberOfChildren)")
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
     }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        updateNumberOfGuests()
+    }
+    
     
     func updateDateViews() {
         checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
@@ -127,5 +143,11 @@ class AddRegistriationTableViewController: UITableViewController {
             break
         }
     }
+    
+    func updateNumberOfGuests() {
+        numberOfAdultsLabel.text = "\(Int(numberOfAdultsStepper.value))"
+        numberOfChildrenLabel.text = "\(Int(numberOfChildrenStepper.value))"
+    }
+    
     
 }
