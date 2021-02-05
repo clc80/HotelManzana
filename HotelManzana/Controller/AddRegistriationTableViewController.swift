@@ -26,6 +26,7 @@ class AddRegistriationTableViewController: UITableViewController {
     @IBOutlet var numberOfAdultsStepper: UIStepper!
     @IBOutlet var numberOfChildrenStepper: UIStepper!
     
+    @IBOutlet var wifiSwitchChanged: UISwitch!
     
     var isCheckInDatePickerShown: Bool = false {
         didSet {
@@ -58,6 +59,7 @@ class AddRegistriationTableViewController: UITableViewController {
         let checkOutDate = checkOutDatePicker.date
         let numberOfAdults = Int(numberOfAdultsStepper.value)
         let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = wifiSwitchChanged.isOn
         
         print("DONE Tapped")
         print("firstName: \(firstName)")
@@ -67,6 +69,7 @@ class AddRegistriationTableViewController: UITableViewController {
         print("checkOut: \(checkOutDate)")
         print("numberOfAdults: \(numberOfAdults)")
         print("numberOfChildren: \(numberOfChildren)")
+        print("wifi: \(hasWifi)")
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
@@ -77,6 +80,9 @@ class AddRegistriationTableViewController: UITableViewController {
         updateNumberOfGuests()
     }
     
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+        //added later
+    }
     
     func updateDateViews() {
         checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
