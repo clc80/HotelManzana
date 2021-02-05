@@ -15,6 +15,7 @@
 		3A3C0BA225CA59C500E532AC /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C0BA125CA59C500E532AC /* Registration.swift */; };
 		3A3C0BA525CA5A2300E532AC /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C0BA425CA5A2300E532AC /* RoomType.swift */; };
 		3A3C0BAA25CA5C1700E532AC /* AddRegistriationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C0BA925CA5C1700E532AC /* AddRegistriationTableViewController.swift */; };
+		3AD237DF25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD237DE25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3A3C0BA125CA59C500E532AC /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		3A3C0BA425CA5A2300E532AC /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
 		3A3C0BA925CA5C1700E532AC /* AddRegistriationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistriationTableViewController.swift; sourceTree = "<group>"; };
+		3AD237DE25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3C0BA925CA5C1700E532AC /* AddRegistriationTableViewController.swift */,
+				3AD237DE25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD237DF25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift in Sources */,
 				3A3C0BA525CA5A2300E532AC /* RoomType.swift in Sources */,
 				3A3C0BAA25CA5C1700E532AC /* AddRegistriationTableViewController.swift in Sources */,
 				3A3C0B8B25CA595E00E532AC /* AppDelegate.swift in Sources */,
