@@ -34,7 +34,7 @@ class RegistrationTableViewController: UITableViewController {
         dateFormatter.dateStyle = .short
         
         cell.textLabel?.text = "From \(registration.firstName) \(registration.lastName)"
-        cell.detailTextLabel?.text = "\(registration.checkInDate) - \(registration.checkOutDate): \(registration.roomType)"
+        cell.detailTextLabel?.text = "\(dateFormatter.string(from:registration.checkInDate)) - \(dateFormatter.string(from:registration.checkOutDate)): \(registration.roomType.name)"
 
         return cell
     }
