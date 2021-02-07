@@ -67,27 +67,8 @@ class AddRegistriationTableViewController: UITableViewController, SelectRoomType
 
     }
     
-    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
-        let firstName = firstNameTextField.text ?? ""
-        let lastName = lastNameTextField.text ?? ""
-        let email = emailTextField.text ?? ""
-        let checkInDate = checkInDatePicker.date
-        let checkOutDate = checkOutDatePicker.date
-        let numberOfAdults = Int(numberOfAdultsStepper.value)
-        let numberOfChildren = Int(numberOfChildrenStepper.value)
-        let hasWifi = wifiSwitchChanged.isOn
-        let roomChoice = roomType?.name ?? "Not Set"
-        
-        print("DONE Tapped")
-        print("firstName: \(firstName)")
-        print("lastName: \(lastName)")
-        print("email: \(email)")
-        print("checkIn: \(checkInDate)")
-        print("checkOut: \(checkOutDate)")
-        print("numberOfAdults: \(numberOfAdults)")
-        print("numberOfChildren: \(numberOfChildren)")
-        print("wifi: \(hasWifi)")
-        print("roomType: \(roomChoice)")
+    @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {

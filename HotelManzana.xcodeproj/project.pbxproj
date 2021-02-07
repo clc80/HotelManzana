@@ -16,6 +16,7 @@
 		3A3C0BA525CA5A2300E532AC /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C0BA425CA5A2300E532AC /* RoomType.swift */; };
 		3A3C0BAA25CA5C1700E532AC /* AddRegistriationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C0BA925CA5C1700E532AC /* AddRegistriationTableViewController.swift */; };
 		3AD237DF25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD237DE25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift */; };
+		3AD237FE25CF55280080FEF7 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD237FD25CF55280080FEF7 /* RegistrationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3A3C0BA425CA5A2300E532AC /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
 		3A3C0BA925CA5C1700E532AC /* AddRegistriationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistriationTableViewController.swift; sourceTree = "<group>"; };
 		3AD237DE25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
+		3AD237FD25CF55280080FEF7 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				3A3C0BA925CA5C1700E532AC /* AddRegistriationTableViewController.swift */,
 				3AD237DE25CCF9220080FEF7 /* SelectRoomTypeTableViewController.swift */,
+				3AD237FD25CF55280080FEF7 /* RegistrationTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				3A3C0B8B25CA595E00E532AC /* AppDelegate.swift in Sources */,
 				3A3C0BA225CA59C500E532AC /* Registration.swift in Sources */,
 				3A3C0B8D25CA595E00E532AC /* SceneDelegate.swift in Sources */,
+				3AD237FE25CF55280080FEF7 /* RegistrationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
